@@ -5,7 +5,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "candidate_rg" {
-  name     = "Oleksii-CANDIDATE_RG"
+  name     = "Oleksii1-Candidate"
   location = "westeurope"
 }
 
