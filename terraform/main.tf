@@ -27,7 +27,8 @@ resource "azurerm_public_ip" "candidate_ip" {
   name                = "candidate-ip"
   location            = azurerm_resource_group.candidate_rg.location
   resource_group_name = azurerm_resource_group.candidate_rg.name
-  allocation_method   = "Dynamic"
+  allocation_method   = "Static"
+  sku                 = "Standard"
 }
 
 resource "azurerm_network_interface" "candidate_nic" {
