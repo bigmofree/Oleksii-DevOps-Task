@@ -3,6 +3,7 @@
   hosts: jenkins
   become: yes
   tasks:
+
     - name: Install dependencies (curl, gnupg, lsb-release)
       apt:
         name:
